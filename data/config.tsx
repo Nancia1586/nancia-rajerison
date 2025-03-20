@@ -3,13 +3,14 @@ import { Link } from '@saas-ui/react'
 import { NextSeoProps } from 'next-seo'
 import { FaGithub, FaTwitter } from 'react-icons/fa'
 import { FiCheck } from 'react-icons/fi'
+
 import { Logo } from './logo'
 
 const siteConfig = {
-  logo: Logo,
+  // logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'Nancia Rajerison',
+    description: "Nancia Rajerison's Portfolio",
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
@@ -17,22 +18,30 @@ const siteConfig = {
     links: [
       {
         id: 'features',
-        label: 'Features',
+        label: 'Accueil',
       },
       {
         id: 'pricing',
-        label: 'Pricing',
+        label: 'A propos',
       },
       {
         id: 'faq',
-        label: 'FAQ',
+        label: 'Formations',
       },
       {
-        label: 'Login',
+        label: 'Compétences',
         href: '/login',
       },
       {
-        label: 'Sign Up',
+        label: 'Expériences',
+        href: '/login',
+      },
+      {
+        label: 'Projets',
+        href: '/login',
+      },
+      {
+        label: 'Contact',
         href: '/signup',
         variant: 'primary',
       },
@@ -42,7 +51,9 @@ const siteConfig = {
     copyright: (
       <>
         Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        <Link href="https://www.linkedin.com/in/nancia-rajerison-a46519248">
+          Nancia Rajerison
+        </Link>
       </>
     ),
     links: [

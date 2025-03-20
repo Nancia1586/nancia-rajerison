@@ -1,35 +1,35 @@
-import { ColorModeScript, theme } from '@chakra-ui/react'
+'use client'
+
+import { Box, ColorModeScript, theme } from '@chakra-ui/react'
+
+import { ReactNode } from 'react'
+
+import { Footer, FooterProps } from '#components/layout/footer'
+import { Header, HeaderProps } from '#components/layout/header'
 
 import { Provider } from './provider'
 
-export default function Layout(props: { children: React.ReactNode }) {
+interface LayoutProps {
+  children: ReactNode
+  headerProps?: HeaderProps
+  footerProps?: FooterProps
+}
+
+export default function Layout(props: LayoutProps) {
+  const { children, headerProps, footerProps } = props
   const colorMode = theme.config.initialColorMode
 
   return (
     <html lang="en" data-theme={colorMode} style={{ colorScheme: colorMode }}>
-      <head>
-        <link
-          rel="apple-touch-icon"
-          sizes="76x76"
-          href="/static/favicons/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/static/favicons/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/static/favicons/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/static/favicons/manifest.json" />
-      </head>
       <body className={`chakra-ui-${colorMode}`}>
         <ColorModeScript initialColorMode={colorMode} />
-        <Provider>{props.children}</Provider>
+        <Provider>
+          <Box>
+            <Header {...headerProps} />
+            <Box as="main">{children}</Box>
+            <Footer {...footerProps} />
+          </Box>
+        </Provider>
       </body>
     </html>
   )

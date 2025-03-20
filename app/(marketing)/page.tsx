@@ -60,8 +60,8 @@ import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
 
 export const meta: Metadata = {
-  title: 'Saas UI Landingspage',
-  description: 'Free SaaS landingspage starter kit',
+  title: 'Nancia Rajerison',
+  description: "Nancia Rajerison's portfolio",
 }
 
 const Home: NextPage = () => {
@@ -94,8 +94,8 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                Bonjour,
+                <Br /> moi c'est Nancia Rajerison
               </FallInPlace>
             }
             description={
