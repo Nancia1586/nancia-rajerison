@@ -31,7 +31,7 @@ import { experiences } from './data'
 
 const ExperienceSection = () => {
   return (
-    <Box position="relative" overflow="hidden">
+    <Box position="relative" overflow="hidden" id="experiences">
       <SectionTitle title={title} description={description} />
       <Container maxW="container.xl" w="auto" pb="40">
         <Grid

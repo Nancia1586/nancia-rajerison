@@ -19,7 +19,7 @@ import { trainings } from './data'
 
 const TrainingSection = () => {
   return (
-    <Box position="relative" overflow="hidden">
+    <Box position="relative" overflow="hidden" id="training">
       <SectionTitle title={title} description={description} />
       <Container maxW="container.xl" w="auto" pb="40">
         <Grid

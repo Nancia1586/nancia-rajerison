@@ -10,7 +10,7 @@ import { skillImages } from './data'
 
 const SkillSection = () => {
   return (
-    <Box position="relative" overflow="hidden">
+    <Box position="relative" overflow="hidden" id="skills">
       <SectionTitle title={title} description={description} />
       <Container maxW="container.xl" w="auto" pb="40">
         <Grid

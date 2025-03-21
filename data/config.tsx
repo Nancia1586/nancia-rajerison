@@ -17,24 +17,24 @@ const siteConfig = {
   header: {
     links: [
       {
-        id: 'features',
+        id: 'home',
         label: 'Accueil',
       },
       {
-        id: 'faq',
+        id: 'training',
         label: 'Formations',
       },
       {
+        id: 'skills',
         label: 'Compétences',
-        href: '/login',
       },
       {
+        id: 'experiences',
         label: 'Expériences',
-        href: '/login',
       },
       {
+        id: 'projects',
         label: 'Projets',
-        href: '/login',
       },
       {
         label: 'Contact',

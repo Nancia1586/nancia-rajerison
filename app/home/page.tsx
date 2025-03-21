@@ -18,7 +18,7 @@ import { Em } from '#components/typography'
 
 const HomeSection = () => {
   return (
-    <Box position="relative" overflow="hidden">
+    <Box position="relative" overflow="hidden" id="home">
       <BackgroundGradient height="100%" zIndex="-1" />
       <Container maxW="container.xl" pt={{ base: 35, lg: 35 }} pb="40">
         <Stack
