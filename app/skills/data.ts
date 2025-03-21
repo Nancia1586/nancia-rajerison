@@ -38,8 +38,8 @@ export const skillImages = [
   {
     url: '/static/images/sql-logo.png',
     alt: 'SQL logo',
-    width: 100,
-    height: 100,
+    width: 110,
+    height: 110,
   },
   {
     url: '/static/images/mongodb-logo.png',
