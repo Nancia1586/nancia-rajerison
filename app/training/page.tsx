@@ -21,7 +21,7 @@ const TrainingSection = () => {
   return (
     <Box position="relative" overflow="hidden">
       <SectionTitle title={title} description={description} />
-      <Container maxW="container.xl" w="auto">
+      <Container maxW="container.xl" w="auto" pb="40">
         <Grid
           templateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(8, 1fr)' }}
         >

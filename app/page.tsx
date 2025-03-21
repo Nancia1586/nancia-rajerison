@@ -3,6 +3,7 @@
 import { Box } from '@chakra-ui/react'
 
 import HomeSection from './home/page'
+import SkillSection from './skills/page'
 import TrainingSection from './training/page'
 
 export default function Page() {
@@ -11,6 +12,8 @@ export default function Page() {
       <HomeSection />
 
       <TrainingSection />
+
+      <SkillSection />
 
       {/* <HighlightsSection />
 
