@@ -21,10 +21,6 @@ const siteConfig = {
         label: 'Accueil',
       },
       {
-        id: 'pricing',
-        label: 'A propos',
-      },
-      {
         id: 'faq',
         label: 'Formations',
       },
